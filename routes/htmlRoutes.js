@@ -5,6 +5,8 @@ var path = require("path");
 module.exports = function(app) {
  
 
+  // Requests for the HTML GET requests.  
+
   app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });

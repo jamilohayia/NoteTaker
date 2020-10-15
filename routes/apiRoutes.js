@@ -13,6 +13,7 @@ module.exports = function(app) {
       res.json(data);
     });
 
+    // The Delete Method Method deletes the specified resource 
 
     app.delete("/api/notes/:id", function(req, res) {
       let id = req.params.id;

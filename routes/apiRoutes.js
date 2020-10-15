@@ -6,6 +6,7 @@ module.exports = function(app) {
       res.json(getAllNotes());
     });
 
+    // Post is used to send data to a server to create/update a resource
     app.post("/api/notes", function(req, res) {
       let data = req.body;
       data = pasteNew(data);

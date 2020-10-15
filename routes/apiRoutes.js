@@ -23,7 +23,7 @@ module.exports = function(app) {
       return JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     }
 
-    // Function to paste a New Note 
+    // Function to paste a New Note to the application 
   
     function pasteNew(note) {
       let notes = getAllNotes();

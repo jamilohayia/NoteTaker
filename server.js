@@ -1,6 +1,5 @@
 var express = require("express");
 
-
 // this variable allows for node to know that we are creating an express server. 
 
 var app = express ();

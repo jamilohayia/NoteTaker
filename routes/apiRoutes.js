@@ -1,5 +1,6 @@
 // fs module to access physical file systm
 var fs = require("fs");
+var path = require("path");
 
 module.exports = function(app) {
     app.get("/api/notes", function(req, res) {
@@ -22,8 +23,9 @@ module.exports = function(app) {
     });
 
     function getAllNotes(){
-      return JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+      return JSON.parse(fs.readFileSync(path.join(__dirname+"/../Develop/db/db.json"), "utf8"));
     }
+
 
     // Function to paste a New Note to the application 
   

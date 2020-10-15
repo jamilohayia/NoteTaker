@@ -2,13 +2,13 @@ var express = require("express");
 
 // this variable allows for node to know that we are creating an express server. 
 
-var app = express ();
+var app = express();
 
 // initial port 
 
 var PORT = process.env.PORT || 8080; 
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/Develop/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

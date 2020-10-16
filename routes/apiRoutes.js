@@ -53,6 +53,6 @@ module.exports = function(app) {
     }
   
     function overwriteNotes(newNotes){
-      fs.writeFileSync("./db/db.json", JSON.stringify(newNotes));
+      fs.writeFileSync(__dirname+"/../Develop/db/db.json", JSON.stringify(newNotes));
     }
   };
